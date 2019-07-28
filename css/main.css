@@ -1,0 +1,95 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+img,
+embed,
+object,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+.header {
+  text-align: center;
+  border-bottom: solid #7d97ad;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.header-img {
+  height: 80px;
+  width: 80px;
+}
+
+.name {
+  margin: 5px 0 0 0;
+}
+
+.title {
+  margin-bottom: 10px;
+}
+
+.hero {
+  text-align: center;
+}
+
+.hero-img {
+  height: 40%;
+  width: 100%;
+}
+
+.featured {
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.featured-container {
+  margin-top: 10px;
+}
+
+.featured-work {
+  margin-bottom: 10px;
+}
+
+.featured-work img {
+  height: 250px;
+  width: 220px;
+}
+
+@media screen and (min-width: 361px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+  }
+  .header-logo {
+    margin: 10px;
+    height: 80px;
+  }
+  .header-name {
+    margin: 10px;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .featured-container {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    margin: auto;
+  }
+}
